@@ -1,0 +1,21 @@
+
+input productInput{
+    id: String
+    userId:String
+    qty: String
+}
+type productRes{
+    id: String
+    userId:String
+    qty: String
+    messageStatus: String
+    responseNumber: String
+}
+
+type Query {
+  productQuery: String
+}
+
+type Mutation {
+    addProduct(objInput: productInput):productRes
+}
